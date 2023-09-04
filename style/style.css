@@ -1,0 +1,320 @@
+:root{
+    --green: #6cc091;
+    --grey: #9a9a9a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem 9.975rem;
+    
+}
+.nav-menu{
+    display: flex;
+    right: 0;
+    transition: all 0.3s;
+    
+}
+.nav-menu ul {
+    list-style: none;
+}
+.nav-menu ul li{
+    display: inline-block;
+    padding: 0 0.75rem;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu ul li a:hover{
+    color: var(--green)
+}
+.nav-menu ul li a::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 1px;
+    margin: 0.7rem 0;
+    background-color: var(--green);
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.nav-menu ul li a:hover::after{
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+.logo{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.logo:hover{
+    cursor: pointer;
+}
+.header-section{
+    position: relative;
+    height: 94vh;
+    background-color: rgba(26,26,26,0.7);
+    background-image: url('../images/banner.jpg');
+    background-position: center 82%;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    
+}
+.artstudio-container{
+    color: #fff;
+    text-align: center;
+}
+.artstudio-container h1{
+    font-size: 2.7rem;
+    font-weight: 400;
+    padding: 6rem 0 0 0;
+    margin-bottom: 3.5rem;
+}
+.artstudio-elements{
+    display: flex;
+    justify-content: center;
+    max-width:75rem;
+    margin: 0 auto;
+    
+}
+.element:not(:last-child){
+    padding: 0 7rem;
+    border-right: 1px solid var(--grey);
+}
+.element:last-child{
+    padding: 0 7rem;
+}
+.element h3{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.element p{
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--grey);
+}
+.element i{
+    font-size: 3rem;
+    color: var(--green);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.button-container button, .btn{
+    background-color: transparent;
+    color: var(--green);
+    padding: 0.4rem 1.7rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin: 4rem 0 0 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    letter-spacing: 0.125rem;
+}
+.button-container button:hover{
+    background-color:rgba(108, 192, 145, 0.1) ;
+    color: rgba(108, 192, 145, 0.7);
+    cursor: pointer;
+
+}
+.portfolio-section{
+    display: flex;
+    justify-content: center;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.portfolio-section article{
+    text-align: center;
+    flex: 1;
+}
+.portfolio-section article img{
+    border-radius: 50%;
+}
+.portfolio-section article h3{
+    font-size: 1.45rem;
+    color: #555;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+.portfolio-section article p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(124, 124, 124);
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+
+footer{
+    padding: 0 10rem;
+    text-align: center;
+    background-color: var(--green);
+}
+footer h3{
+    padding: 6rem 0 3.5rem 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.35rem;
+
+
+}
+.form{
+    max-width: 75rem ;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.inputs-container{
+    display: flex;
+    justify-content: center;
+}
+.name-container,.email-container,.textarea-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+}
+.name-container{
+    margin-right: 2.25rem;
+}
+input,textarea{
+    background-color: transparent;
+    border: 2px solid #8dcca9;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    color: #fff;
+}
+textarea{
+    resize: none;
+}
+input:focus,textarea:focus{
+    border: 2px solid #488d68;
+
+
+}
+input::placeholder,textarea::placeholder{
+    color: #b6eed0;
+}
+.textarea-container label{
+    margin: 1rem 0;
+}
+.btn-submit{
+    color: #fff;
+    background-color: var(--green);
+    border: 2px solid #fff;
+    padding: 0.5rem 1.7rem;
+    margin-bottom: 8rem;
+
+
+}
+.btn-submit:hover{
+    color: #fff;
+    background-color: #83c8a3;
+}
+.fa-bars {
+    display: none;
+}
+.nav-menu.visible {
+    right: 0;
+}
+/*Media Queries 600px*/
+
+@media only screen and (max-width:600px) {
+    .header-section{
+        height: 100%;
+    }
+    .artstudio-elements{
+        flex-direction: column;
+    }
+    .element{
+        margin-bottom: 2rem;
+    }
+    .button-container button{
+        margin-bottom: 2rem;
+    }
+    .portfolio-section{
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    .btn{
+        margin: 2rem;
+    }
+    footer{
+        padding: 0 1rem;
+    }
+    .inputs-container{
+        flex-direction: column;
+    }
+    .name-container{
+        margin: 0;
+    }
+   .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+   }
+   .nav-menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8);
+   }
+   .fa-bars {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: var(--green);
+    font-size: 1.5rem;
+    
+   }
+}
+

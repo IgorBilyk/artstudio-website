@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <section class="header-section">
+      <header class="header">
+        <h3 class="logo">Арт-студія</h3>
+        <nav class="nav-menu" id="navmenu">
+          <i class="fa-solid fa-bars" id="bars"></i>
+          <ul class="nav-list">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#portfolio">Фотогалерея</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="artstudio-container">
+        <h1>Вітаємо на сайті салону "Арт-студія"</h1>
+        <div class="artstudio-elements">
+          <div class="element">
+            <i class="fa-solid fa-image"></i>
+            <h3>Поліграфія</h3>
+            <p>Suspendisse amet ullamco</p>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-camera"></i>
+            <h3>Фото</h3>
+            <p>Class aptent taciti ad litora</p>
+          </div>
+          <div class="element">
+            <i class="fa-solid fa-print"></i>
+            <h3>Послуги копі-центру</h3>
+            <p>Nulla vitae mauris non felis</p>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="button">Дізнатись Більше</button>
+      </div>
+    </section>
+    <main>
+      <section class="portfolio-section" id="portfolio">
+        <article>
+          <img src="images/pic01.jpg" alt="phone" />
+          <h3>
+            Lorem ipsum <br />
+            dolor amet nullam
+          </h3>
+          <p>
+            Morbi in sem quis dui placerat ornare. Pellentesquenisi <br />
+            euismod in, pharetra a, ultricies in diam sed arcu. Cras <br />
+            consequat egestas augue vulputate.
+          </p>
+          <button class="btn">Дізнатись більше</button>
+        </article>
+        <article>
+          <img src="images/pic02.jpg" alt="photo" />
+          <h3>
+            Sed feugiat <br />
+            tempus adipicsing
+          </h3>
+          <p>
+            Morbi in sem quis dui placerat ornare. Pellentesquenisi <br />
+            euismod in, pharetra a, ultricies in diam sed arcu. Cras <br />
+            consequat egestas augue vulputate.
+          </p>
+          <button class="btn">Дізнатись більше</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>Потрібна консультація?</h3>
+      <form class="form" id="contacts">
+        <div class="inputs-container">
+          <div class="name-container">
+            <label for="name">Ім'я</label>
+            <input id="name" type="text" placeholder="Андрій" />
+          </div>
+          <div class="email-container">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="andriy@gmail.com" />
+          </div>
+        </div>
+        <div class="textarea-container">
+          <label for="area">Ваше запитання </label>
+          <textarea
+            id="area"
+            cols="30"
+            rows="13"
+            placeholder="Ваше запитання..."
+          ></textarea>
+        </div>
+        <button type="button" class="btn btn-submit">Відправити</button>
+      </form>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
